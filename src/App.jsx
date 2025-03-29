@@ -48,7 +48,10 @@ const App = () => {
   };
 
   const handleInputChange = (e) => {
-    setNewMovie({ ...newMovie, [e.target.name]: e.target.value });
+    setNewMovie({
+      ...newMovie,
+      [e.target.name]: e.target.value,
+    });
   };
 
   const handleFilter = (filter) => {
